@@ -1,0 +1,239 @@
+:root {
+  --color-background: rgb(218, 218, 218);
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: var(--color-background);
+}
+
+/* Block Input */
+.containerNotesInput {
+  width: 100%;
+  height: 470px;
+}
+.ShapeNotes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Teks-Catatan {
+  width: 50%;
+  font-size: 1em;
+  line-height: 5em;
+}
+.KontakInput {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+}
+.judul,
+.Catatan {
+  width: 70%;
+}
+.myJudul > p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.teks-judul {
+  width: 100%;
+  display: flex;
+}
+.inputJudul {
+  width: 90%;
+  padding: 3px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.lengthInput > p {
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 5px;
+}
+.myCatatan > p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.teks-Catatan > textarea {
+  width: 95%;
+  height: 200px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5px;
+}
+.buttonSubmit {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+.thisSubmit {
+  width: 110px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: gray;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+.thisSubmit:hover {
+  cursor: pointer;
+}
+
+/* Block Search */
+.NotesList {
+  width: 100%;
+  position: relative;
+}
+.Search {
+  width: 100%;
+  display: flex;
+  padding: 0 10px 0 10px;
+  justify-content: flex-end;
+  position: absolute;
+}
+.inputSearch {
+  width: 20%;
+  z-index: 1000;
+  height: 35px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.notYetNotes {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Block Table Catatan dan arsip */
+.containerNotesBody,
+.containerNotesArsip {
+  width: 100%;
+  position: relative;
+}
+.TextHasilCatatan {
+  width: 100%;
+}
+.TextHasilCatatan::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+.TextHasilCatatan > p {
+  padding: 10px 0 10px 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+.ContainerListCatatan {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px 20px 10px 20px;
+  gap: 10px;
+}
+.KotakCatatan {
+  width: 350px;
+  background-color: gray;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+}
+.judulCatatan {
+  width: 100%;
+}
+.judulCatatan > p {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 0 5px 0;
+}
+.tglCatatan {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px 0 5px 0;
+}
+.Notes {
+  width: 99%;
+}
+.Notes > p {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 0 10px 0;
+}
+.functionButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.buttonDelete,
+.buttonArsip {
+  width: 50%;
+  padding-bottom: 10px;
+}
+.buttonDelete > button,
+.buttonArsip > button {
+  padding: 5px;
+  width: 90%;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: rgb(216, 216, 216);
+  border: none;
+  border-radius: 5px;
+}
+button:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  .KontakInput {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 692px) {
+  .KontakInput {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 492px) {
+  .Teks-Catatan {
+    font-size: 0.8em;
+    line-height: 2em;
+  }
+}
+@media screen and (max-width: 992px) {
+  .inputSearch {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 692px) {
+  .inputSearch {
+    width: 50%;
+  }
+}
